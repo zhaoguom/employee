@@ -1,59 +1,31 @@
-2020-03-25 22:14:13.052  INFO 13536 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : Starting EmployeeApplication on zhaoguo-desktop with PID 13536 (D:\Scripts\java\employee\target\classes started by Zhaoguo.Ma in D:\Scripts\java\employee)
-2020-03-25 22:14:13.056  INFO 13536 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : No active profile set, falling back to default profiles: default
-2020-03-25 22:14:13.286  INFO 13536 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\zhaoguo.ma\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.2.10\jaxb-osgi-2.2.10.jar referenced one or more files that do not exist: file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-core-2.2.10.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-xjc-2.2.10.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-impl-2.2.10.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-jxc-2.2.10.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb1-impl-2.2.10.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-runtime-2.2.10.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-core-2.2.10.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-api-2.2.12-b140109.1041.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/txw2-2.2.10.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/istack-commons-runtime-2.19.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/stax-ex-1.7.7.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/FastInfoset-1.2.13.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/msv-core-2013.6.1.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/xsdlib-2013.6.1.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/relaxngDatatype-20020414.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/isorelax-20090621.jar
-2020-03-25 22:14:13.286  INFO 13536 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-03-25 22:14:13.286  INFO 13536 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-03-25 22:14:14.578  INFO 13536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
-2020-03-25 22:14:14.586  INFO 13536 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-03-25 22:14:14.587  INFO 13536 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
-2020-03-25 22:14:14.710  INFO 13536 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-03-25 22:14:14.710  INFO 13536 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1423 ms
-2020-03-25 22:14:15.226  INFO 13536 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-03-25 22:14:15.295  INFO 13536 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-03-25 22:14:15.313  INFO 13536 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-03-25 22:14:15.523  INFO 13536 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-03-25 22:14:15.543  INFO 13536 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-03-25 22:14:15.572  INFO 13536 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-03-25 22:14:15.712  INFO 13536 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingGET_1
-2020-03-25 22:14:15.712  INFO 13536 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingHEAD_1
-2020-03-25 22:14:15.713  INFO 13536 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingPOST_1
-2020-03-25 22:14:15.714  INFO 13536 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingPUT_1
-2020-03-25 22:14:15.714  INFO 13536 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingPATCH_1
-2020-03-25 22:14:15.715  INFO 13536 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingDELETE_1
-2020-03-25 22:14:15.716  INFO 13536 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingOPTIONS_1
-2020-03-25 22:14:15.716  INFO 13536 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingTRACE_1
-2020-03-25 22:14:15.719  INFO 13536 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllEmployeesUsingGET_1
-2020-03-25 22:14:15.767  INFO 13536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
-2020-03-25 22:14:15.770  INFO 13536 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : Started EmployeeApplication in 3.022 seconds (JVM running for 3.463)
-2020-03-25 22:14:20.516  INFO 13536 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-03-25 22:14:20.516  INFO 13536 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-03-25 22:14:20.521  INFO 13536 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2020-03-25 22:14:20.620  INFO 13536 --- [http-nio-8089-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2020-03-25 22:14:21.119  WARN 13536 --- [http-nio-8089-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.zhaoguom.employee.error.BusinessException]
-2020-03-25 22:46:17.843  INFO 13536 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-03-25 22:46:17.847  INFO 13536 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2020-03-25 22:46:18.215  INFO 13536 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : Starting EmployeeApplication on zhaoguo-desktop with PID 13536 (D:\Scripts\java\employee\target\classes started by Zhaoguo.Ma in D:\Scripts\java\employee)
-2020-03-25 22:46:18.216  INFO 13536 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : No active profile set, falling back to default profiles: default
-2020-03-25 22:46:18.640  INFO 13536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
-2020-03-25 22:46:18.641  INFO 13536 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-03-25 22:46:18.641  INFO 13536 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
-2020-03-25 22:46:18.659  INFO 13536 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-03-25 22:46:18.659  INFO 13536 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 439 ms
-2020-03-25 22:46:18.821  INFO 13536 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-03-25 22:46:18.853  INFO 13536 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-03-25 22:46:18.856  INFO 13536 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-03-25 22:46:19.036  INFO 13536 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-03-25 22:46:19.037  INFO 13536 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-03-25 22:46:19.045  INFO 13536 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-03-25 22:46:19.132  INFO 13536 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingGET_1
-2020-03-25 22:46:19.133  INFO 13536 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingHEAD_1
-2020-03-25 22:46:19.134  INFO 13536 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingPOST_1
-2020-03-25 22:46:19.135  INFO 13536 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingPUT_1
-2020-03-25 22:46:19.137  INFO 13536 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingPATCH_1
-2020-03-25 22:46:19.138  INFO 13536 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingDELETE_1
-2020-03-25 22:46:19.143  INFO 13536 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingOPTIONS_1
-2020-03-25 22:46:19.145  INFO 13536 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingTRACE_1
-2020-03-25 22:46:19.148  INFO 13536 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllEmployeesUsingGET_1
-2020-03-25 22:46:19.160  INFO 13536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
-2020-03-25 22:46:19.161  INFO 13536 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : Started EmployeeApplication in 0.968 seconds (JVM running for 1926.832)
-2020-03-25 22:46:19.163  INFO 13536 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-03-26 00:15:09.402  INFO 4984 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : Starting EmployeeApplication on zhaoguo-desktop with PID 4984 (D:\Scripts\java\employee\target\classes started by Zhaoguo.Ma in D:\Scripts\java\employee)
+2020-03-26 00:15:09.409  INFO 4984 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : No active profile set, falling back to default profiles: default
+2020-03-26 00:15:09.654  INFO 4984 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\zhaoguo.ma\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.2.10\jaxb-osgi-2.2.10.jar referenced one or more files that do not exist: file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-core-2.2.10.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-xjc-2.2.10.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-impl-2.2.10.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-jxc-2.2.10.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb1-impl-2.2.10.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-runtime-2.2.10.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-core-2.2.10.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-api-2.2.12-b140109.1041.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/txw2-2.2.10.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/istack-commons-runtime-2.19.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/stax-ex-1.7.7.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/FastInfoset-1.2.13.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/msv-core-2013.6.1.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/xsdlib-2013.6.1.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/relaxngDatatype-20020414.jar,file:/C:/Users/zhaoguo.ma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/isorelax-20090621.jar
+2020-03-26 00:15:09.654  INFO 4984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-26 00:15:09.655  INFO 4984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-26 00:15:11.037  INFO 4984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2020-03-26 00:15:11.045  INFO 4984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-26 00:15:11.045  INFO 4984 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-26 00:15:11.172  INFO 4984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-26 00:15:11.172  INFO 4984 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1517 ms
+2020-03-26 00:15:11.678  INFO 4984 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-03-26 00:15:11.747  INFO 4984 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-26 00:15:11.767  INFO 4984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-26 00:15:11.981  INFO 4984 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-03-26 00:15:11.999  INFO 4984 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-03-26 00:15:12.027  INFO 4984 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-03-26 00:15:12.161  INFO 4984 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingGET_1
+2020-03-26 00:15:12.162  INFO 4984 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingHEAD_1
+2020-03-26 00:15:12.163  INFO 4984 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingPOST_1
+2020-03-26 00:15:12.164  INFO 4984 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingPUT_1
+2020-03-26 00:15:12.165  INFO 4984 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingPATCH_1
+2020-03-26 00:15:12.166  INFO 4984 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingDELETE_1
+2020-03-26 00:15:12.167  INFO 4984 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingOPTIONS_1
+2020-03-26 00:15:12.168  INFO 4984 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editEmployeeByIdUsingTRACE_1
+2020-03-26 00:15:12.169  INFO 4984 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllEmployeesUsingGET_1
+2020-03-26 00:15:12.207  INFO 4984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2020-03-26 00:15:12.209  INFO 4984 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : Started EmployeeApplication in 3.112 seconds (JVM running for 3.565)
+2020-03-26 00:15:23.264  INFO 4984 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-26 00:15:23.264  INFO 4984 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-26 00:15:23.270  INFO 4984 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-03-26 00:15:23.419  INFO 4984 --- [http-nio-8089-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
