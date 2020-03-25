@@ -39,8 +39,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public EmployeeDO createOrUpdateEmployee(EmployeeDO employeeDO) {
         if(employeeDO.getId() == null) {
-            int id = employeeDoMapper.insert(employeeDO);
-            return employeeDoMapper.selectByPrimaryKey(id);
+            employeeDoMapper.insertSelective(employeeDO);
+            return employeeDoMapper.selectByPrimaryKey(employeeDO.getId());
         } else {
             EmployeeDO employee = employeeDoMapper.selectByPrimaryKey(employeeDO.getId());
             if(employee!=null) {
@@ -49,10 +49,11 @@ public class EmployeeServiceImpl implements EmployeeService {
                 newEmployee.setFirstName(employeeDO.getFirstName());
                 newEmployee.setLastName(employeeDO.getLastName());
 
-                int newEmployeeId = employeeDoMapper.updateByPrimaryKey(newEmployee);
-                return employeeDoMapper.selectByPrimaryKey(newEmployeeId);
+                employeeDoMapper.updateByPrimaryKey(newEmployee);
+                return employeeDoMapper.selectByPrimaryKey(newEmployee.getId());
             } else {
-                return employeeDoMapper.selectByPrimaryKey(employeeDoMapper.insert(employeeDO));
+                employeeDoMapper.insertSelective(employeeDO);
+                return employeeDoMapper.selectByPrimaryKey(employeeDO.getId());
             }
         }
     }
