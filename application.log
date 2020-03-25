@@ -1,0 +1,363 @@
+2020-03-25 14:52:34.694  INFO 10432 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : Starting EmployeeApplication on zhaoguo-desktop with PID 10432 (D:\Scripts\java\employee\target\classes started by Zhaoguo.Ma in D:\Scripts\java\employee)
+2020-03-25 14:52:34.697  INFO 10432 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : No active profile set, falling back to default profiles: default
+2020-03-25 14:52:34.744  INFO 10432 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-25 14:52:34.744  INFO 10432 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-25 14:52:35.254  WARN 10432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.zhaoguom.employee]' package. Please check your configuration.
+2020-03-25 14:52:36.065  INFO 10432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2020-03-25 14:52:36.076  INFO 10432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-25 14:52:36.077  INFO 10432 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-25 14:52:36.151  INFO 10432 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-25 14:52:36.152  INFO 10432 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1407 ms
+2020-03-25 14:52:36.201  WARN 10432 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController': Unsatisfied dependency expressed through field 'employeeService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zhaoguom.employee.service.EmployeeService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-03-25 14:52:36.203  INFO 10432 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-25 14:52:36.274  INFO 10432 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-25 14:52:36.380 ERROR 10432 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field employeeService in com.zhaoguom.employee.controller.EmployeeController required a bean of type 'com.zhaoguom.employee.service.EmployeeService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.zhaoguom.employee.service.EmployeeService' in your configuration.
+
+2020-03-25 14:53:57.778  INFO 13988 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : Starting EmployeeApplication on zhaoguo-desktop with PID 13988 (D:\Scripts\java\employee\target\classes started by Zhaoguo.Ma in D:\Scripts\java\employee)
+2020-03-25 14:53:57.780  INFO 13988 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : No active profile set, falling back to default profiles: default
+2020-03-25 14:53:57.816  INFO 13988 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-25 14:53:57.816  INFO 13988 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-25 14:53:58.281  WARN 13988 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.zhaoguom.employee]' package. Please check your configuration.
+2020-03-25 14:53:59.009  INFO 13988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2020-03-25 14:53:59.018  INFO 13988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-25 14:53:59.018  INFO 13988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-25 14:53:59.089  INFO 13988 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-25 14:53:59.090  INFO 13988 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1274 ms
+2020-03-25 14:53:59.128  WARN 13988 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController': Unsatisfied dependency expressed through field 'employeeService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeServiceImpl': Unsatisfied dependency expressed through field 'employeeDOMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-03-25 14:53:59.130  INFO 13988 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-25 14:53:59.171  INFO 13988 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-25 14:53:59.252 ERROR 13988 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field employeeDOMapper in com.zhaoguom.employee.service.impl.EmployeeServiceImpl required a bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' in your configuration.
+
+2020-03-25 14:56:01.930  INFO 14920 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : Starting EmployeeApplication on zhaoguo-desktop with PID 14920 (D:\Scripts\java\employee\target\classes started by Zhaoguo.Ma in D:\Scripts\java\employee)
+2020-03-25 14:56:01.932  INFO 14920 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : No active profile set, falling back to default profiles: default
+2020-03-25 14:56:01.969  INFO 14920 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-25 14:56:01.969  INFO 14920 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-25 14:56:02.409  WARN 14920 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.zhaoguom.employee]' package. Please check your configuration.
+2020-03-25 14:56:03.143  INFO 14920 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2020-03-25 14:56:03.152  INFO 14920 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-25 14:56:03.152  INFO 14920 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-25 14:56:03.225  INFO 14920 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-25 14:56:03.226  INFO 14920 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1257 ms
+2020-03-25 14:56:03.264  WARN 14920 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController': Unsatisfied dependency expressed through field 'employeeService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeServiceImpl': Unsatisfied dependency expressed through field 'employeeDOMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-03-25 14:56:03.267  INFO 14920 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-25 14:56:03.308  INFO 14920 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-25 14:56:03.394 ERROR 14920 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field employeeDOMapper in com.zhaoguom.employee.service.impl.EmployeeServiceImpl required a bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' in your configuration.
+
+2020-03-25 14:58:28.844  INFO 16140 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : Starting EmployeeApplication on zhaoguo-desktop with PID 16140 (D:\Scripts\java\employee\target\classes started by Zhaoguo.Ma in D:\Scripts\java\employee)
+2020-03-25 14:58:28.846  INFO 16140 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : No active profile set, falling back to default profiles: default
+2020-03-25 14:58:28.881  INFO 16140 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-25 14:58:28.881  INFO 16140 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-25 14:58:29.346  WARN 16140 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.zhaoguom.employee]' package. Please check your configuration.
+2020-03-25 14:58:30.078  INFO 16140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2020-03-25 14:58:30.087  INFO 16140 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-25 14:58:30.087  INFO 16140 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-25 14:58:30.157  INFO 16140 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-25 14:58:30.157  INFO 16140 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1276 ms
+2020-03-25 14:58:30.195  WARN 16140 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController': Unsatisfied dependency expressed through field 'employeeService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employee': Unsatisfied dependency expressed through field 'employeeDOMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-03-25 14:58:30.198  INFO 16140 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-25 14:58:30.243  INFO 16140 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-25 14:58:30.328 ERROR 16140 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field employeeDOMapper in com.zhaoguom.employee.service.impl.EmployeeServiceImpl required a bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' in your configuration.
+
+2020-03-25 15:00:04.493  INFO 13920 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : Starting EmployeeApplication on zhaoguo-desktop with PID 13920 (D:\Scripts\java\employee\target\classes started by Zhaoguo.Ma in D:\Scripts\java\employee)
+2020-03-25 15:00:04.495  INFO 13920 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : No active profile set, falling back to default profiles: default
+2020-03-25 15:00:04.537  INFO 13920 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-25 15:00:04.537  INFO 13920 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-25 15:00:05.008  WARN 13920 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.zhaoguom.employee]' package. Please check your configuration.
+2020-03-25 15:00:05.768  INFO 13920 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2020-03-25 15:00:05.777  INFO 13920 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-25 15:00:05.777  INFO 13920 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-25 15:00:05.853  INFO 13920 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-25 15:00:05.853  INFO 13920 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1316 ms
+2020-03-25 15:00:05.895  WARN 13920 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController': Unsatisfied dependency expressed through field 'employeeService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employee': Unsatisfied dependency expressed through field 'employeeDOMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-03-25 15:00:05.897  INFO 13920 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-25 15:00:05.940  INFO 13920 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-25 15:00:06.012 ERROR 13920 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field employeeDOMapper in com.zhaoguom.employee.service.impl.EmployeeServiceImpl required a bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' in your configuration.
+
+2020-03-25 15:01:37.865  INFO 4600 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : Starting EmployeeApplication on zhaoguo-desktop with PID 4600 (D:\Scripts\java\employee\target\classes started by Zhaoguo.Ma in D:\Scripts\java\employee)
+2020-03-25 15:01:37.867  INFO 4600 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : No active profile set, falling back to default profiles: default
+2020-03-25 15:01:37.903  INFO 4600 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-25 15:01:37.903  INFO 4600 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-25 15:01:38.378  WARN 4600 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.zhaoguom.employee]' package. Please check your configuration.
+2020-03-25 15:01:39.109  INFO 4600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2020-03-25 15:01:39.117  INFO 4600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-25 15:01:39.118  INFO 4600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-25 15:01:39.185  INFO 4600 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-25 15:01:39.185  INFO 4600 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1282 ms
+2020-03-25 15:01:39.223  WARN 4600 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController': Unsatisfied dependency expressed through field 'employeeService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employee': Unsatisfied dependency expressed through field 'employeeDOMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-03-25 15:01:39.226  INFO 4600 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-25 15:01:39.267  INFO 4600 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-25 15:01:39.351 ERROR 4600 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field employeeDOMapper in com.zhaoguom.employee.service.impl.EmployeeServiceImpl required a bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' in your configuration.
+
+2020-03-25 15:03:59.764  INFO 3472 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : Starting EmployeeApplication on zhaoguo-desktop with PID 3472 (D:\Scripts\java\employee\target\classes started by Zhaoguo.Ma in D:\Scripts\java\employee)
+2020-03-25 15:03:59.767  INFO 3472 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : No active profile set, falling back to default profiles: default
+2020-03-25 15:03:59.806  INFO 3472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-25 15:03:59.806  INFO 3472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-25 15:04:00.299  WARN 3472 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.zhaoguom.employee]' package. Please check your configuration.
+2020-03-25 15:04:01.018  INFO 3472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2020-03-25 15:04:01.027  INFO 3472 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-25 15:04:01.027  INFO 3472 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-25 15:04:01.098  INFO 3472 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-25 15:04:01.099  INFO 3472 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1293 ms
+2020-03-25 15:04:01.139  WARN 3472 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController': Unsatisfied dependency expressed through field 'employeeService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeServiceImpl': Unsatisfied dependency expressed through field 'employeeDOMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-03-25 15:04:01.141  INFO 3472 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-25 15:04:01.183  INFO 3472 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-25 15:04:01.270 ERROR 3472 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field employeeDOMapper in com.zhaoguom.employee.service.impl.EmployeeServiceImpl required a bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' in your configuration.
+
+2020-03-25 15:08:32.760  INFO 14228 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : Starting EmployeeApplication on zhaoguo-desktop with PID 14228 (D:\Scripts\java\employee\target\classes started by Zhaoguo.Ma in D:\Scripts\java\employee)
+2020-03-25 15:08:32.762  INFO 14228 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : No active profile set, falling back to default profiles: default
+2020-03-25 15:08:32.807  INFO 14228 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-25 15:08:32.807  INFO 14228 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-25 15:08:33.338  WARN 14228 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.zhaoguom.employee]' package. Please check your configuration.
+2020-03-25 15:08:34.115  INFO 14228 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2020-03-25 15:08:34.124  INFO 14228 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-25 15:08:34.125  INFO 14228 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-25 15:08:34.202  INFO 14228 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-25 15:08:34.202  INFO 14228 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1395 ms
+2020-03-25 15:08:34.244  WARN 14228 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController': Unsatisfied dependency expressed through field 'employeeService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeServiceImpl': Unsatisfied dependency expressed through field 'employeeDOMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-03-25 15:08:34.247  INFO 14228 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-25 15:08:34.291  INFO 14228 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-25 15:08:34.388 ERROR 14228 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field employeeDOMapper in com.zhaoguom.employee.service.impl.EmployeeServiceImpl required a bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' in your configuration.
+
+2020-03-25 15:10:33.818  INFO 12016 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : Starting EmployeeApplication on zhaoguo-desktop with PID 12016 (D:\Scripts\java\employee\target\classes started by Zhaoguo.Ma in D:\Scripts\java\employee)
+2020-03-25 15:10:33.820  INFO 12016 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : No active profile set, falling back to default profiles: default
+2020-03-25 15:10:33.864  INFO 12016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-25 15:10:33.864  INFO 12016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-25 15:10:34.400  WARN 12016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.zhaoguom.employee]' package. Please check your configuration.
+2020-03-25 15:10:35.192  INFO 12016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2020-03-25 15:10:35.202  INFO 12016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-25 15:10:35.202  INFO 12016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-25 15:10:35.279  INFO 12016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-25 15:10:35.279  INFO 12016 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1415 ms
+2020-03-25 15:10:35.322  WARN 12016 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController': Unsatisfied dependency expressed through field 'employeeService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeServiceImpl': Unsatisfied dependency expressed through field 'employeeDOMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-03-25 15:10:35.324  INFO 12016 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-25 15:10:35.369  INFO 12016 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-25 15:10:35.459 ERROR 12016 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field employeeDOMapper in com.zhaoguom.employee.service.impl.EmployeeServiceImpl required a bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' in your configuration.
+
+2020-03-25 15:12:12.249  INFO 2364 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : Starting EmployeeApplication on zhaoguo-desktop with PID 2364 (D:\Scripts\java\employee\target\classes started by Zhaoguo.Ma in D:\Scripts\java\employee)
+2020-03-25 15:12:12.251  INFO 2364 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : No active profile set, falling back to default profiles: default
+2020-03-25 15:12:12.291  INFO 2364 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-25 15:12:12.291  INFO 2364 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-25 15:12:12.831  WARN 2364 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.zhaoguom.employee]' package. Please check your configuration.
+2020-03-25 15:12:13.614  INFO 2364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2020-03-25 15:12:13.623  INFO 2364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-25 15:12:13.624  INFO 2364 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-25 15:12:13.707  INFO 2364 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-25 15:12:13.707  INFO 2364 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1416 ms
+2020-03-25 15:12:13.749  WARN 2364 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController': Unsatisfied dependency expressed through field 'employeeService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeServiceImpl': Unsatisfied dependency expressed through field 'employeeDOMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-03-25 15:12:13.751  INFO 2364 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-25 15:12:13.795  INFO 2364 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-25 15:12:13.883 ERROR 2364 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field employeeDOMapper in com.zhaoguom.employee.service.impl.EmployeeServiceImpl required a bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' in your configuration.
+
+2020-03-25 15:14:50.630  INFO 8760 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : Starting EmployeeApplication on zhaoguo-desktop with PID 8760 (D:\Scripts\java\employee\target\classes started by Zhaoguo.Ma in D:\Scripts\java\employee)
+2020-03-25 15:14:50.633  INFO 8760 --- [restartedMain] c.zhaoguom.employee.EmployeeApplication  : No active profile set, falling back to default profiles: default
+2020-03-25 15:14:50.678  INFO 8760 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-25 15:14:50.678  INFO 8760 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-25 15:14:51.247  WARN 8760 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.zhaoguom.employee]' package. Please check your configuration.
+2020-03-25 15:14:52.044  INFO 8760 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2020-03-25 15:14:52.054  INFO 8760 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-25 15:14:52.054  INFO 8760 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-25 15:14:52.141  INFO 8760 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-25 15:14:52.141  INFO 8760 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1463 ms
+2020-03-25 15:14:52.192  WARN 8760 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController': Unsatisfied dependency expressed through field 'employeeService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeServiceImpl': Unsatisfied dependency expressed through field 'employeeDoMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-03-25 15:14:52.194  INFO 8760 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-25 15:14:52.239  INFO 8760 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-25 15:14:52.335 ERROR 8760 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field employeeDoMapper in com.zhaoguom.employee.service.impl.EmployeeServiceImpl required a bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.zhaoguom.employee.dao.EmployeeDOMapper' in your configuration.
+
