@@ -6,4 +6,7 @@
             <class name="com.zhaoguom.employee.test.EmployeeServiceTest"/>
         </classes>
     </test>
+    <listeners>
+        <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"></listener>
+    </listeners>
 </suite>
