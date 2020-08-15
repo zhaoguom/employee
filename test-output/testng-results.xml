@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="276" started-at="2020-08-15T15:19:26Z" finished-at="2020-08-15T15:19:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="276" started-at="2020-08-15T15:19:26Z" finished-at="2020-08-15T15:19:27Z">
+      <class name="com.zhaoguom.employee.test.EmployeeServiceTest2">
+        <test-method status="PASS" signature="TestGet()[pri:0, instance:com.zhaoguom.employee.test.EmployeeServiceTest2@47542153]" name="TestGet" duration-ms="183" started-at="2020-08-15T15:19:26Z" finished-at="2020-08-15T15:19:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestGet -->
+        <test-method status="PASS" signature="testCreateEmployee(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zhaoguom.employee.test.EmployeeServiceTest2@47542153]" name="testCreateEmployee" duration-ms="67" started-at="2020-08-15T15:19:27Z" data-provider="createEmployeeData" finished-at="2020-08-15T15:19:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ma]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Zhaoguo]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[zhaoguo.ma@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateEmployee -->
+      </class> <!-- com.zhaoguom.employee.test.EmployeeServiceTest2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
